@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  app:
+    image: mikolajmyszka/ecs_portfolio:app
+    # build:
+    #   context: .
+    volumes:
+      - static_data:/vol/web
+    environment:
+      - SECRET_KEY=samplesecretkey123
+      - ALLOWED_HOSTS=* #127.0.0.1,localhost
+    networks:
+      - app_network
+  
+  proxy:
+    image: mikolajmyszka/ecs_portfolio:proxy
+    # build:
+    #   context: ./proxy
+    volumes:
+      - static_data:/vol/static
+    ports:
+      - "8080:8080"
+    depends_on:
+      - app
+    networks:
+      - app_network
+
+volumes:
+  static_data:
+    driver: local
+
+networks:
+  app_network:
+    driver: bridge
