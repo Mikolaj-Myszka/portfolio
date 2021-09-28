@@ -6,8 +6,8 @@
   <div class="container-fluid py-5">
     <h1 class="display-5 fw-bold">Mikołaj Myszka</h1>
     <p class="col-md-12 fs-4">Welcome to my portfolio page, where I present my previous and current projects.</p>
-    <button class="btn btn-primary btn-lg" type="button">Github</button>
-    <button class="btn btn-primary btn-lg" type="button">LinkedIn</button>
+    <button class="btn btn-primary btn-lg" type="button"><a href="">Github</a></button>
+    <button class="btn btn-primary btn-lg" type="button"><a href="https://pl.linkedin.com/in/miko%C5%82aj-myszka-8037261b">LinkedIn</a></button>
   </div>
 </div>
 
@@ -19,15 +19,16 @@
     <div class="h-100 p-5 text-white bg-dark rounded-3">
       <h2>This Portfolio</h2>
       <p>This portfolio presents projects and repositories I worked on or I have been working on right now.</p>
-      <p>Tech stack: []</p>
-      <button class="btn btn-outline-light" type="button"><a href="">Go to website</a></button>
+      <p>Tech stack: [Django 3, Docker, Postgres, AWS EC2, Bootstrap 4, nginx, uWSGI, GitHub]</p>
+      <!-- <button class="btn btn-outline-light" type="button"><a href="">Go to website</a></button> -->
     </div>
   </div>
   <div class="col-md-6">
     <div class="h-100 p-5 text-white bg-dark rounded-3">
       <h2>Argos Mentor</h2>
-      <p>Interactive basketball dashboard presenting shot charts, scatter plots, 5-player units, radar plots.</p>
-      <p>Tech stack: []</p>
+      <p>Interactive basketball dashboard presenting shot charts, scatter plots, 5-player units, radar plots. The software processes, gathers and generates standard and advanced basketball statistics.
+        It’s an MVP created for basketball coaches and teams to provide insights and support decision making.</p>
+      <p>Tech stack: [Django 3, Plotly, Dash, Jupyter Notebook, Pandas, Docker, Postgres, DigitalOcean, Bootstrap 4, nginx, uWSGI, GitLab]</p>
       <button class="btn btn-outline-light" type="button"><a href="http://164.90.214.252:8080/">Go to website</a></button>
     </div>
   </div>
@@ -39,17 +40,18 @@
   <div class="col-md-6">
     <div class="h-100 p-5 text-white bg-dark rounded-3">
       <h2>NBA Dashboard</h2>
-      <p>Website aggregating daily games scores and players statistics. It automatically fetches data on a daily basis from an external API.</p>
-      <p>Tech stack: []</p>
+      <p>Website aggregating games scores and players statistics. It automatically fetches data on a daily basis from an external API and presents it in a concise way (+ historical data). Purpose: show players' performances in one place, on one website.</p>
+      <p>Tech stack: [Django 2.1, API, JavaScript, Chart.js, GitLab, Postgres, Bootstrap 4, Gunicorn, nginx, Heroku]</p>
+      <p>*Server requires 30 seconds to get up</p>
       <button class="btn btn-outline-light" type="button"><a href="http://basketdata.herokuapp.com/">Go to website</a></button>
     </div>
   </div>
   <div class="col-md-6">
     <div class="h-100 p-5 text-white bg-dark rounded-3">
-      <h2>Argos Mentor</h2>
-      <p>Interactive basketball dashboard presenting shot charts, scatter plots, 5-player units, radar plots.</p>
-      <p>Tech stack: []</p>
-      <button class="btn btn-outline-light" type="button"><a href="">Go to website</a></button>
+      <h2>Basketball Intelligence</h2>
+      <p>Application written in Python and R, presenting statistics in the form of charts from the Polish Women Basket League [Basket Liga Kobiet] 2017/2018.</p>
+      <p>Tech stack: [Django 1.11, JavaScript, Chart.js, Vue.js, Bootstrap 4, PythonAnywhere, GitHub]</p>
+      <button class="btn btn-outline-light" type="button"><a href="http://basket4life.pythonanywhere.com/blk/">Go to website</a></button>
     </div>
   </div>
 </div>
@@ -62,17 +64,17 @@
 <div class="row align-items-md-stretch">
   <div class="col-md-6">
     <div class="h-100 p-5 bg-light border rounded-3">
-      <h2>ETL_apache_airflow</h2>
-      <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-      <p>Tech stack: []</p>
+      <h2>ETL + Apache Airflow</h2>
+      <p>Implementation of ETL process where Spotify API genres are downloaded and stored in the local database. The whole process is scheduled using the Apache Airflow.</p>
+      <p>Tech stack: [Apache Airflow, pandas, requests, SQLAlchemy, sqlite3]</p>
       <button class="btn btn-outline-secondary" type="button"><a href="">Go to repo</a></button>
     </div>
   </div>
   <div class="col-md-6">
     <div class="h-100 p-5 bg-light border rounded-3">
-      <h2>profiles-rest-api</h2>
-      <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-      <p>Tech stack: []</p>
+      <h2>Predicting heart disease using machine learning</h2>
+      <p>This notebook looks into using various Python-based machine learning and data science libraries in an attempt to build a machine learning model capable of predicting whether or not someone has heart disease based on their medical attributes. Given clinical parameters about a patient, can we predict whether or not they have heart disease?</p>
+      <p>Tech stack: [numpy, pandas, matplotlib, seaborn, sklearn]</p>
       <button class="btn btn-outline-secondary" type="button"><a href="">Go to repo</a></button>
     </div>
   </div>
@@ -91,9 +93,9 @@
   </div>
   <div class="col-md-6">
     <div class="h-100 p-5 bg-light border rounded-3">
-      <h2>profiles-rest-api</h2>
-      <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-      <p>Tech stack: []</p>
+      <h2>Predicting the Sale Price of Bulldozers using Machine Learning</h2>
+      <p>In this notebook, we're going to go through an example machine learning project with the goal of predicting the sale price of bulldozers. How well can we predict the future sale price of a bulldozer, given its characteristics and previous examples of how much similar bulldozers have been sold for?</p>
+      <p>Tech stack: [numpy, pandas, matplotlib, sklearn]</p>
       <button class="btn btn-outline-secondary" type="button"><a href="">Go to repo</a></button>
     </div>
   </div>
@@ -112,9 +114,9 @@
     </div>
     <div class="col-md-6">
       <div class="h-100 p-5 bg-light border rounded-3">
-        <h2>profiles-rest-api</h2>
-        <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-        <p>Tech stack: []</p>
+        <h2>End-to-end Multi-class Dog Breed Classification</h2>
+        <p>This notebook builds an end-to-end multi-class image classifier using TensorFlow 2.0 and TensorFlow Hub. Identifying the breed of a dog given an image of a dog.</p>
+        <p>Tech stack: [tensorflow, tensorflow hub, pandas, numpy, sklearn]</p>
         <button class="btn btn-outline-secondary" type="button"><a href="">Go to repo</a></button>
       </div>
     </div>
